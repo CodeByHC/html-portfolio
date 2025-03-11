@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guess My Number</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="./styles.css" rel="stylesheet"/>
+</head>
+<body>
+  <div id="reset-rules">
+    <button id="reset" class="btn">Again!</button>
+    <p>(Between 1 and 20)</p>
+  </div>
+  <h1>Guess My Number!</h1>
+  <div id="logo-bar">
+    <div class="line"></div>
+    <div id="square">?</div>
+    <div class="line"></div>
+  </div>
+  <div id="game-section">
+    <div id="grid">    
+      <input type="number" id="numberInput" placeholder="Number" min="1" max="20">
+      <div id="prompts">
+        <p id="message">Start guessing...</p>
+      </div>
+      <button id="check" class="btn">Check!</button>
+      <div id="score-data">
+        <p id="score-label">💯 Score: <span id="score">20</span></p>
+        <p id="highscore-label">🥇 Highscore: <span id="highscore">0</span></p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

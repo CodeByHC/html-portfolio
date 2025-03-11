@@ -1,0 +1,121 @@
+body {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    background-color: #3f3f3f;
+}
+
+h1 {
+    margin-top: 60px;
+    text-align: center;
+}
+
+#reset-rules {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#logo-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.line {
+    border: 5px solid white;
+    flex: 1;
+    height: 0;
+}
+
+#square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3f3f3f;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    font-size: 75px;
+    padding-left: 10px;
+}
+
+#game-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 100px 100px;
+    grid-column-gap: 100px;
+    grid-row-gap: 50px;
+}
+
+#prompts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#numberInput {
+    background-color: #3f3f3f;
+    border: 5px solid white;
+    padding: 10px;
+    outline: none;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#reset {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.btn {
+    background-color: white;
+    font-size: 2rem;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.btn:hover {
+    background-color: whitesmoke;
+    color: #3f3f3f;
+}
+  
+.btn:active {
+    transform: scale(0.95); 
+}
+
+@media (max-width: 768px) {
+    #grid {
+        grid-template-columns: 400px; /* Stack grid items vertically */
+        grid-template-rows: 75px 75px 75px 75px;
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #square {
+        width: 100px;
+        height: 100px;
+        font-size: 60px;
+    }
+
+    #grid p {
+        text-align: center;
+    }
+}
